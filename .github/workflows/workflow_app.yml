@@ -26,6 +26,8 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install --upgrade pipenv
           python -m pip install --upgrade Flask-Pytest
+          python -m pip install --upgrade gunicorn
+          python -m pip install --upgrade gunicorn gevent
           pipenv install --dev
           pipenv install tomli
           pipenv sync
